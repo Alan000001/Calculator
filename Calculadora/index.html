@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+
+    <link href="estilos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <form action="" name="Calc">
+      <table class="tabla" border="10">
+
+        <tr>
+          <th>
+            <textarea readonly="readonly" class="pantalla" name="Input" id="p" cols="30" rows="10"></textarea>
+          </th>
+        </tr>
+
+        <tr>
+
+          <th>
+
+            <table>
+              <tr>
+
+                <th>
+                    <!--numeros-->
+                    <table>
+
+                        <tr>
+                            <th>
+
+                                <input class="numeros" name="one" type="button" value="1" onclick="Calc.Input.value += '1' ">
+
+                                <input onclick="Calc.Input.value += '2'" class='numeros' name='two' type='button' value='2'>
+                                <input onclick="Calc.Input.value += '3'" class='numeros' name='theree' type='button' value='3'>
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <th>
+
+                                <input onclick="Calc.Input.value += '4'" class="numeros" name="four" type="button" value="4">
+
+                                <input onclick="Calc.Input.value += '5'" class="numeros" name="five" type="button" value="5">
+                                <input onclick="Calc.Input.value += '6'" class="numeros" name="six" type="button" value="6">
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+
+                                <input onclick="Calc.Input.value += '7'" class="numeros" name="seven" type="button" value="7">
+
+                                <input onclick="Calc.Input.value += '8'" class="numeros" name="eight" type="button" value="8">
+                                <input onclick="Calc.Input.value += '9'" class="numeros" name="nine" type="button" value="9">
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+
+                                <input onclick="Calc.Input.value += '0'" class="numeros" name="zero" type="button" value="0">
+
+                                <input onclick="Calc.Input.value += '.'" class="numeros" name="punt" type="button" value=".">
+                                <input onclick="del()" class="borrar" name="clear" type="button" value="⌫">
+                            </th>
+                        </tr>
+
+                    </table>
+
+                </th>
+              
+<th>
+    <table>
+        <tr>
+            <tr>
+                <th>
+
+                    <input onclick="Calc.Input.value += '+'" class="calculo" name="plus" type="button" value="+">
+
+                    <input onclick="Calc.Input.value += '-'" class="calculo" name="-" type="button" value="&minus;">
+                    
+                </th>
+            </tr>
+            <tr>
+                <th>
+
+                    <input onclick="Calc.Input.value += '*'" class="calculo" name="times" type="button" value="x">
+
+                    <input onclick="Calc.Input.value += '/'" class="calculo" name="div" type="button" value="/">
+                    
+                </th>
+            </tr>
+            <tr>
+                <th>
+
+                    <input onclick="Calc.Input.value += '^'" class="calculo" name="pwr" type="button" value="^">
+
+                    <input onclick="Calc.Input.value += 'sqrt('+Calc.Input.value+')'" class="calculo" name="sqrt" type="button" value="&#8730;">
+                    
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+
+                    <input onclick="calculate()" class="calculo" name="Doit" type="button" value="=">
+
+                    <input onclick="Calc.Input.value = ''" class="borrar" name="clear" type="button" value="AC">
+                   
+                </th>
+            </tr>
+        </tr>
+    </table>
+</th>            
+            
+            
+            
+            
+            </tr>
+
+
+
+
+
+
+            </table>
+
+          </th>
+
+        </tr>
+      
+    
+    </table>
+
+    </form>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
